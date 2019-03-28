@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 {
     TApplication rootapp("mmDaq Online Monitoring", &argc, argv);
-    rootapp.SetReturnFromRun(true);
+    //rootapp.SetReturnFromRun(true);
 
     QApplication a(argc, argv);
     MainWindow w;

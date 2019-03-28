@@ -9,12 +9,12 @@ MainWindow::MainWindow(QWidget *parent) :
 
     rootTimer = new QTimer();
     connect(rootTimer,SIGNAL(timeout()),this,SLOT(handleRootEvents()));
-
+    rootTimer->start(100);
     TCanvas *c2=new TCanvas("myCanvas");
-    TH1D *s=new TH1D("dsadsa","dsadsa",200,-2,2);
+    TH1D *s=new TH1D("s","s",200,-2,2);
     s->Draw();
     s->FillRandom("gaus",10000);
-    rootTimer->start(100);
+
     c2->Modified();
     c2->Update();
 
