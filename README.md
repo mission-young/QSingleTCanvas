@@ -33,3 +33,6 @@ void MainWindow::handleRootEvents()
 }
 ```
 First three lines are used for processing root events every 100ms(`gSystem->ProcessEvents()`). deleting second or third line will response none root event. TCanvas or TH1D must initialize with pointer, otherwises, it will be deleted after constructing of MainWindow.
+
+# Acknowledge
+- [meleneemil/OLD-testTCanvasQtMac](https://github.com/meleneemil/OLD-testTCanvasQtMac)
