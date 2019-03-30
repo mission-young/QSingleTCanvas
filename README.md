@@ -12,7 +12,7 @@ Almostly, it's the mininum code, which means every line is necessary. You can de
 
 ## Code Review
 - `main.cpp`
-	- `TApplication rootapp("mmDaq Online Monitoring", &argc, argv);`, which is necessary for root-Based GUI app.
+	- `TApplication rootapp("root", &argc, argv);`, which is necessary for root-Based GUI app.
 	- `rootapp.SetReturnFromRun(true);`,which tell application to return from run. But for now, it seems to be unnecessary?
 - `mainwindow.cpp`
 
