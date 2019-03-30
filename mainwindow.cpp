@@ -26,9 +26,17 @@ MainWindow::~MainWindow()
 }
 
 
-
-
 void MainWindow::handleRootEvents()
 {
   gSystem->ProcessEvents();
+}
+
+void MainWindow::on_le_cmd_returnPressed()
+{
+    gROOT->ProcessLine(ui->le_cmd->text().toStdString().c_str());
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    gROOT->ProcessLine(ui->te_cmd->toPlainText().toStdString().c_str());
 }

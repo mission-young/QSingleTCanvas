@@ -32,6 +32,10 @@ private slots:
     void handleRootEvents();
 
 
+    void on_le_cmd_returnPressed();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     TCanvas* c1;
